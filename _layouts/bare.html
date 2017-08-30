@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% assign defaultTitle = page.location | capitalize -%}
+		<title>{{ page.title | default: defaultTitle }} - {{ site.name }}</title>
+
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+		<link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+		<link rel="stylesheet" href="css/bootstrap-extras.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body data-location="{{ page.location }}" class="{{ page.bodyClass }}">
+		{{ content }}
+
+		<script src="js/bootstrap.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

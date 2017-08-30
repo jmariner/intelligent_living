@@ -1,0 +1,6 @@
+port: 8080
+exclude: ['/ignore']
+encoding: UTF-8
+
+# global variables accessed by {{ site.variableName }}
+name: Intelligent Living

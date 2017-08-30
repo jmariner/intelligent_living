@@ -1,0 +1,26 @@
+Logo
+https://www.bmweducation.co.uk/wp-content/themes/bmweducation/img/about-us/section-9-logo.png
+
+Splash Image
+https://i.ytimg.com/vi/GTfUSllTpZ4/maxresdefault.jpg
+
+Categories
+https://www.ixiacom.com/sites/default/files/2016-03/ProductsAndSolutions-SecurityHero.png
+http://images.clipartpanda.com/home-clipart-home-hi.png
+http://img.sxsw.com/2015/spg_images/IAP41061.png
+
+Products
+(nest)		https://www.amazon.com/Nest-Learning-Thermostat-Generation-Stainless/dp/B0131RG6VK/ref=sr_1_1?s=home-automation&srs=6563140011&ie=UTF8&qid=1502801407&sr=1-1
+(tp-link)	https://www.amazon.com/TP-Link-Dimmable-Equivalent-Amazon-LB100/dp/B01HXM8XF6/ref=sr_1_5?s=home-automation&srs=6563140011&ie=UTF8&qid=1502801808&sr=1-5
+(dimmer)	https://www.amazon.com/P-PKG1W-WH-Wireless-600-watt-150-watt-Multi-Location/dp/B00JJY0S4G/ref=sr_1_5?s=home-automation&srs=6563140011&ie=UTF8&qid=1502802029&sr=1-5
+(echo)		https://www.amazon.com/dp/product/B00X4WHP5E/ref=EchoCP_dt_tile_image/ref=s9_acss_bw_cg_EchoCP_4a1_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-4&pf_rd_r=WG76NMDGM1D6GGAXWW4Z&pf_rd_t=101&pf_rd_p=c8ee7427-cc2b-4e88-b0c2-9b50d2cf9c38&pf_rd_i=9818047011
+
+(ring-camera)	https://www.amazon.com/dp/B0722R3WV5/ref=twister_B07211JJJ9?_encoding=UTF8&psc=1
+(motion-sensor)	https://www.amazon.com/Fosmon-WaveLink-51005HOM-Operating-Indicators/dp/B01MYQ6WN4/ref=lp_11040971_1_7?s=security-surveillance&ie=UTF8&qid=1502984510&sr=1-7
+(fingerprint-handle)	https://www.amazon.com/Ultraloq-UL3-BT-Fingerprint-Touchscreen/dp/B01KB9WM2S/ref=lp_14241141_1_2?s=security-surveillance&ie=UTF8&qid=1502984754&sr=1-2&th=1
+(pet-cam)		https://www.amazon.com/Furbo-Dog-Camera-Treat-Tossing/dp/B01FXC7JWQ/ref=lp_7161093011_1_18?s=photo&ie=UTF8&qid=1502985030&sr=1-18
+
+(fitbit)	https://www.amazon.com/Fitbit-Blaze-Fitness-Silver-Version/dp/B019VM3CPW/ref=lp_8849526011_1_1?s=electronics&ie=UTF8&qid=1502985194&sr=1-1&th=1
+(garmin-watch)	https://www.amazon.com/Garmin-v%C3%ADvoactive-Smart-Watch-Regular/dp/B01BKUB6BA/ref=lp_7939901011_1_2?s=wearable-tech&ie=UTF8&qid=1502985672&sr=1-2
+(oculus)	https://www.amazon.com/Oculus-Rift-Touch-Virtual-Reality-System/dp/B073X8N1YW/ref=lp_14775003011_1_1?s=wearable-tech&ie=UTF8&qid=1502985650&sr=1-1&th=1
+(body-cam)	https://www.amazon.com/iON-Camera-SnapCam-Wearable-Bluetooth/dp/B012X10Y18/ref=lp_10048714011_1_10?s=photo&ie=UTF8&qid=1502985556&sr=1-10

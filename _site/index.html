@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Home - Intelligent Living</title>
+
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+		<link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+		<link rel="stylesheet" href="css/bootstrap-extras.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body data-location="home" class="">
+		<header class="jumbotron">
+	<div class="container">
+		<h1>
+			<span>Intelligent Living</span>
+		</h1>
+	</div>
+</header>
+<nav id="global-nav" class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-left logo" href="index.html">
+				<img src="img/logo.png" alt="Intelligent Living" height="60">
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="main-navbar">
+			<ul class="nav navbar-nav">
+
+				<li data-tab="home" class="js-hover"><a href="index.html">Home</a></li>
+				<li data-tab="products" class="js-hover"><a href="products.html">Products</a></li>
+			<!--<li class="js-hover"><a href="#">Promos</a></li> -->
+
+				<li class="dropdown js-hover">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Categories <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+						<li><a href="products.html#home">Home</a></li>
+						
+						<li><a href="products.html#security">Security</a></li>
+						
+						<li><a href="products.html#wearable">Wearables</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="logged-out-only js-hover">
+					<a href="register.html">Sign Up</a>
+				</li>
+				<li class="logged-out-only js-hover">
+					<a href="" id="login-button">Log In</a>
+				</li>
+				<li class="dropdown logged-in-only js-hover">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">My Account <span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="payment.html">Payment Form</a></li>
+						<li><a id="logout-button" href="">Log out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<main class="container-fluid">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="home-carousel" class="">
+
+				<div class="carousel-inner" role="listbox">
+					<div class="slide-container">
+						<div class="slide">
+							<img src="img/slide1.jpg" alt="Slide 1">
+						</div>
+						<div class="slide">
+							<img src="img/slide2.jpg" alt="Slide 2">
+						</div>
+						<div class="slide">
+							<img src="img/slide3.jpg" alt="Slide 3">
+						</div>
+						<div class="slide">
+							<img src="img/slide4.jpg" alt="Slide 4">
+						</div>
+					</div>
+				</div>
+
+				<a id="caro-prev" class="left carousel-control hover-only" href="" role="button">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a id="caro-next" class="right carousel-control hover-only" href="" role="button">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1 class="panel-title medium">Today's Deals</h1>
+		</div>
+		<div class="panel-body">
+			<div class="row horiz-center-items">
+				<div class="col-md-3 col-sm-6">
+					<div class="deal-wrap text-center">
+	<div class="deal-title">Dimmer</div>
+	<div class="image-wrap">
+		<img src="img/products/dimmer1.jpg" alt="" height="200">
+	</div>
+	<div class="deal-desc">BOGO Half Off</div>
+</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="deal-wrap text-center">
+	<div class="deal-title">Ring Floodlight</div>
+	<div class="image-wrap">
+		<img src="img/products/ring-camera1.jpg" alt="" height="200">
+	</div>
+	<div class="deal-desc">Save on Fosmon Motion Cam</div>
+</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="deal-wrap text-center">
+	<div class="deal-title">Oculus</div>
+	<div class="image-wrap">
+		<img src="img/products/oculus1.jpg" alt="" height="200">
+	</div>
+	<div class="deal-desc">Get 6 Free games</div>
+</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="deal-wrap text-center">
+	<div class="deal-title">TP-Link Smart Bulb</div>
+	<div class="image-wrap">
+		<img src="img/products/tp-link1.jpg" alt="" height="200">
+	</div>
+	<div class="deal-desc">Save $20 on 6</div>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1 class="panel-title medium">Categories</h1>
+		</div>
+		<div class="panel-body">
+			<div class="row horiz-center-items">
+				
+					<div class="category-wrap col-sm-4">
+					
+					<div class="circle-image-wrap">
+	<h3 class="image-title">Home</h3>
+	<div class="image-wrap">
+		<a class="circle-image" href="products.html#home">
+			<img class="circle-image" src="img/category1.png" alt="Home" height="200" data-toggle="tooltip" data-placement="bottom" title="Home Products">
+		</a>
+	</div>
+</div>
+					</div>
+				
+					<div class="category-wrap col-sm-4">
+					
+					<div class="circle-image-wrap">
+	<h3 class="image-title">Security</h3>
+	<div class="image-wrap">
+		<a class="circle-image" href="products.html#security">
+			<img class="circle-image" src="img/category2.png" alt="Security" height="200" data-toggle="tooltip" data-placement="bottom" title="Security Products">
+		</a>
+	</div>
+</div>
+					</div>
+				
+					<div class="category-wrap col-sm-4">
+					
+					<div class="circle-image-wrap">
+	<h3 class="image-title">Wearables</h3>
+	<div class="image-wrap">
+		<a class="circle-image" href="products.html#wearable">
+			<img class="circle-image" src="img/category3.png" alt="Wearables" height="200" data-toggle="tooltip" data-placement="bottom" title="Wearable Smart Products">
+		</a>
+	</div>
+</div>
+					</div>
+				
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 text-md-left col-sm-12 text-xs-center">
+			<address>
+				&copy; 2017 Intelligent Living<br>
+				<a href="mailto:intelligentliving@example.com">intelligentliving@example.com</a>
+			</address>
+		</div>
+		<div class="col-md-4 text-md-right col-md-push-4 col-sm-12 col-sm-push-0 text-xs-center">
+			<span>
+				Made by Justin Mariner using <a href="http://getbootstrap.com/">Bootstrap</a>
+				and the <a href="https://bootswatch.com/darkly/">Darkly</a> theme.
+			</span>
+			<br>
+			<span>
+				Credit to <a href="https://www.amazon.com/">Amazon.com</a> for example products.
+			</span>
+			<br>
+			<span>
+				Example logo based on the real <a href="https://www.bmweducation.co.uk/i-living/">Intelligent Living</a>.
+			</span>
+		</div>
+		<div class="social-icons-wrap col-md-4 col-md-pull-4 col-sm-12 col-sm-pull-0 text-center">
+			<div class="social-icons">
+				<img src="img/facebook.png" alt="Facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+				<img src="img/twitter.png" alt="Twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+				<img src="img/linkedin.png" alt="LinkedIn" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+				<img src="img/instagram.png" alt="Instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<script src="js/bootstrap.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

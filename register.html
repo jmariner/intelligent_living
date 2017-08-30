@@ -1,0 +1,60 @@
+---
+layout: main
+location: register
+---
+<main class="container-fluid">
+
+	<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1 class="panel-title medium">Registration</h1>
+			</div>
+			<div class="panel-body">
+				<form id="regForm" class="col-xs-12 col-sm-8 col-sm-offset-2" method="get" action="welcome.html">
+					<div class="form-group required">
+						<label class="control-label" for="input-name">Name</label>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+							<input class="form-control" id="input-name" name="name" type="text" placeholder="John Smith">
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-email">Email</label>
+						<div class="input-group">
+							<span class="input-group-addon">&#64;<!--@ symbol--></span>
+							<input class="form-control" id="input-email" name="email" type="text" placeholder="johnsmith@example.com">
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-password">Password</label>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input class="form-control" id="input-password" name="password" type="password">
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-password2">Re-enter Password</label>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input class="form-control" id="input-password2" name="password2" type="password">
+						</div>
+						<span class="help-block">
+							Passwords must match.
+							<span class="glyphicon glyphicon-ok on-success"></span>
+							<span class="glyphicon glyphicon-remove on-error"></span>
+						</span>
+					</div>
+					<div id="formError" class="hidden alert alert-danger">
+						<span class="text"></span>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="btn btn-success">Register</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</main>

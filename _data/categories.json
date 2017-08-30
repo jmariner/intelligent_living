@@ -1,0 +1,23 @@
+[
+	{
+		"id": "home",
+		"name": "Home",
+		"longName": "Home Products",
+		"image": "category1.png",
+		"desc": ""
+	},
+	{
+		"id": "security",
+		"name": "Security",
+		"longName": "Security Products",
+		"image": "category2.png",
+		"desc": ""
+	},
+	{
+		"id": "wearable",
+		"name": "Wearables",
+		"longName": "Wearable Smart Products",
+		"image": "category3.png",
+		"desc": ""
+	}
+]

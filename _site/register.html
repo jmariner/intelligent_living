@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Register - Intelligent Living</title>
+
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+		<link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+		<link rel="stylesheet" href="css/bootstrap-extras.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body data-location="register" class="">
+		<header class="jumbotron">
+	<div class="container">
+		<h1>
+			<span>Intelligent Living</span>
+		</h1>
+	</div>
+</header>
+<nav id="global-nav" class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-left logo" href="index.html">
+				<img src="img/logo.png" alt="Intelligent Living" height="60">
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="main-navbar">
+			<ul class="nav navbar-nav">
+
+				<li data-tab="home" class="js-hover"><a href="index.html">Home</a></li>
+				<li data-tab="products" class="js-hover"><a href="products.html">Products</a></li>
+			<!--<li class="js-hover"><a href="#">Promos</a></li> -->
+
+				<li class="dropdown js-hover">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Categories <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						
+						<li><a href="products.html#home">Home</a></li>
+						
+						<li><a href="products.html#security">Security</a></li>
+						
+						<li><a href="products.html#wearable">Wearables</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="logged-out-only js-hover">
+					<a href="register.html">Sign Up</a>
+				</li>
+				<li class="logged-out-only js-hover">
+					<a href="" id="login-button">Log In</a>
+				</li>
+				<li class="dropdown logged-in-only js-hover">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">My Account <span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="payment.html">Payment Form</a></li>
+						<li><a id="logout-button" href="">Log out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<main class="container-fluid">
+
+	<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1 class="panel-title medium">Registration</h1>
+			</div>
+			<div class="panel-body">
+				<form id="regForm" class="col-xs-12 col-sm-8 col-sm-offset-2" method="get" action="welcome.html">
+					<div class="form-group required">
+						<label class="control-label" for="input-name">Name</label>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+							<input class="form-control" id="input-name" name="name" type="text" placeholder="John Smith">
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-email">Email</label>
+						<div class="input-group">
+							<span class="input-group-addon">&#64;<!--@ symbol--></span>
+							<input class="form-control" id="input-email" name="email" type="text" placeholder="johnsmith@example.com">
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-password">Password</label>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input class="form-control" id="input-password" name="password" type="password">
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-password2">Re-enter Password</label>
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input class="form-control" id="input-password2" name="password2" type="password">
+						</div>
+						<span class="help-block">
+							Passwords must match.
+							<span class="glyphicon glyphicon-ok on-success"></span>
+							<span class="glyphicon glyphicon-remove on-error"></span>
+						</span>
+					</div>
+					<div id="formError" class="hidden alert alert-danger">
+						<span class="text"></span>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="btn btn-success">Register</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</main>
+<footer class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 text-md-left col-sm-12 text-xs-center">
+			<address>
+				&copy; 2017 Intelligent Living<br>
+				<a href="mailto:intelligentliving@example.com">intelligentliving@example.com</a>
+			</address>
+		</div>
+		<div class="col-md-4 text-md-right col-md-push-4 col-sm-12 col-sm-push-0 text-xs-center">
+			<span>
+				Made by Justin Mariner using <a href="http://getbootstrap.com/">Bootstrap</a>
+				and the <a href="https://bootswatch.com/darkly/">Darkly</a> theme.
+			</span>
+			<br>
+			<span>
+				Credit to <a href="https://www.amazon.com/">Amazon.com</a> for example products.
+			</span>
+			<br>
+			<span>
+				Example logo based on the real <a href="https://www.bmweducation.co.uk/i-living/">Intelligent Living</a>.
+			</span>
+		</div>
+		<div class="social-icons-wrap col-md-4 col-md-pull-4 col-sm-12 col-sm-pull-0 text-center">
+			<div class="social-icons">
+				<img src="img/facebook.png" alt="Facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+				<img src="img/twitter.png" alt="Twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+				<img src="img/linkedin.png" alt="LinkedIn" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+				<img src="img/instagram.png" alt="Instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<script src="js/bootstrap.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

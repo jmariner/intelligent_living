@@ -1,0 +1,372 @@
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #375a7f;
+}
+
+body {
+	-ms-overflow-style: scrollbar;
+	overflow-y: scroll;
+}
+
+header.jumbotron {
+	margin-bottom: 0;
+	padding: 0;
+	background-image: url("../img/splash.jpg");
+	background-position-y: 70%;
+}
+
+body[data-location="home"] header.jumbotron {
+	padding: 50px 0;
+}
+
+body:not([data-location="home"]) header.jumbotron h1 span {
+	font-size: .5em;
+}
+
+header.jumbotron h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 12px 0;
+}
+
+#global-nav {
+	z-index: 1000;
+	margin-bottom: 32px;
+}
+
+#global-nav .navbar-header {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/* unset bootstrap hover effect so I can use JS */
+#global-nav .navbar-nav>li>a:hover {
+	color: unset;
+}
+
+#global-nav .navbar-nav>li.js-hovered {
+	color: #375a7f;
+}
+
+@media (min-width: 768px) {
+
+	#global-nav .navbar-header {
+		margin-right: 16px;
+	}
+
+}
+
+#global-nav .logo {
+	padding: 8px 0;
+	float: left;
+}
+
+#global-nav .logo img {
+	height: 44px;
+}
+
+.affix {
+	top: 0;
+	width: 100%;
+}
+
+.affix + main {
+	/* 	navbar height (60) + navbar bottom margin (32)  */
+	padding-top: 92px;
+}
+
+main > *:last-child {
+	margin-bottom: 24px;
+}
+
+.panel .panel-title {
+	text-align: center;
+	margin: 8px 0;
+}
+
+.panel .panel-title.small {
+	font-size: 24px;
+}
+
+.panel .panel-title.medium {
+	font-size: 32px;
+}
+
+.panel .panel-title.large {
+	font-size: 52px;
+}
+
+.panel-heading.left-heading {
+	display: inline-block;
+	margin: 32px 0 16px 0;
+	float: none;
+	border-radius: 0;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.circle-image-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.circle-image-wrap .circle-image {
+	border-radius: 50%;
+}
+
+img.circle-image {
+	border: 1px solid #FFF;
+}
+
+.width-auto {
+	width: auto !important;
+}
+
+.flex-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.vert-margin {
+	margin: 32px 0;
+}
+
+.row.horiz-center-items > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-title {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.product-wrap {
+	margin-bottom: 24px;
+}
+
+.product-price:before {
+	content: "$";
+}
+
+.product-price {
+	font-size: 36px;
+}
+
+.product-name {
+	font-size: 20px;
+}
+
+.product-wrap .image-wrap,
+.deal-wrap .image-wrap {
+	background-color: #FFF;
+}
+
+.deal-wrap {
+	margin-bottom: 16px;
+}
+
+.category-wrap {
+	margin-bottom: 28px;
+}
+
+.deal-wrap .deal-title {
+	font-size: 24px;
+}
+
+.deal-wrap .deal-desc {
+	font-size: 18px;
+}
+
+.deal-wrap .image-wrap {
+	margin: 8px 0;
+}
+
+.product-wrap .image-wrap.js-hovered img:nth-child(1),
+.product-wrap .image-wrap:not(.js-hovered) img:nth-child(2) {
+	display: none;
+}
+
+body:not(.logged-in) .logged-in-only {
+	display: none;
+}
+
+body.logged-in .logged-out-only {
+	display: none;
+}
+
+.jump-target:before {
+	content: "";
+	display: block;
+	height: 60px;
+	margin: -60px 0 0;
+}
+
+.panel .jump-target + .panel-heading {
+	border: 2px solid transparent;
+	border-left: none;
+}
+
+.panel > .jump-target:target + .panel-heading {
+	border-color: #0FF;
+}
+
+.form-group.required > .control-label:after {
+	content: " *";
+	color: #e74c3c;
+}
+
+.form-group {
+	margin-bottom: 28px;
+}
+
+.form-group:not(.has-error) .on-error,
+.form-group:not(.has-success) .on-success {
+	display: none;
+}
+
+#name {
+	margin: 42px 0;
+}
+
+#hiddenBilling {
+	position: relative;
+	padding-top: 10px;
+}
+
+#hiddenBilling.disabled > #billingCover {
+	display: block;
+}
+
+#billingCover {
+	position: absolute;
+	top: 0; bottom: 0;
+	left: -10px; right: -10px;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+#toggleBilling + .toggle-group {
+	-webkit-transition: left 0.2s;
+	-moz-transition: left 0.2s;
+	-o-transition: left 0.2s;
+	transition: left 0.2s;
+}
+
+#home-carousel {
+	margin-bottom: 32px;
+	overflow: hidden;
+	position: relative;
+	counter-reset: slideNum;
+}
+
+#home-carousel .slide-container {
+	display: flex;
+}
+
+#home-carousel .slide {
+	background-color: transparent;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	flex-shrink: 0;
+	transition: margin-left 0.5s linear;
+	margin-left: 0;
+}
+
+#home-carousel .slide:before {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	color: #000;
+	font-size: 12px;
+	content: counter(slideNum);
+	counter-increment: slideNum;
+}
+
+#home-carousel .slide img {
+	display: inline-block;
+	width: 100%;
+}
+
+#home-carousel .carousel-control {
+	width: 7.5%;
+}
+
+#home-carousel .hover-only {
+	opacity: 0;
+	transition: opacity .5s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+#home-carousel:hover .hover-only {
+	opacity: 1;
+}
+
+#productView .imgWrap img {
+	width: 100%;
+}
+
+#productView .imgWrap > div {
+	padding: 0;
+}
+
+#productView .imgWrap > .imgThumbs {
+	padding-right: 16px;
+}
+
+#productView .imgWrap > .imgThumbs > img {
+	margin-bottom: 4px;
+	border: 2px solid transparent;
+	cursor: pointer;
+}
+
+#productView .imgWrap > .imgThumbs > img.selected {
+	border-color: #FF0000;
+}
+
+#productView .price-wrap h1 {
+	margin: 0;
+}
+
+#productView .product-info ul {
+	margin-bottom: 0;
+}
+
+#productView .product-info > div:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+footer address {
+	margin: 0;
+}
+
+footer .social-icons-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+footer .social-icons {
+	/*
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	padding: 16px;*/
+}
+
+footer .social-icons > img {
+	height: 40px;
+}
+
+footer .social-icons > img:not(:last-child) {
+	margin-right: 16px;
+}
+
+footer .row > div {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,10 @@
+<div class="product-wrap text-center" data-href="{{ prod.id }}.html">
+	<a href="">
+		<div class="image-wrap js-hover" title="Click for more information">
+			<img src="img/products/{{ include.images[0] }}" alt="{{ include.name }}" height="200">
+			<img class="hoverImg" src="img/products/{{ include.images[1] }}" alt="{{ include.name }}" height="200">
+		</div>
+	</a>
+	<div class="product-price text-left">{{ include.price }}</div>
+	<div class="product-name text-left"><a href="">{{ include.name }}</a></div>
+</div>

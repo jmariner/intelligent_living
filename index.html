@@ -1,0 +1,75 @@
+---
+layout: main
+location: home
+---
+<main class="container-fluid">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="home-carousel" class="">
+
+				<div class="carousel-inner" role="listbox">
+					<div class="slide-container">
+						<div class="slide">
+							<img src="img/slide1.jpg" alt="Slide 1">
+						</div>
+						<div class="slide">
+							<img src="img/slide2.jpg" alt="Slide 2">
+						</div>
+						<div class="slide">
+							<img src="img/slide3.jpg" alt="Slide 3">
+						</div>
+						<div class="slide">
+							<img src="img/slide4.jpg" alt="Slide 4">
+						</div>
+					</div>
+				</div>
+
+				<a id="caro-prev" class="left carousel-control hover-only" href="" role="button">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a id="caro-next" class="right carousel-control hover-only" href="" role="button">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1 class="panel-title medium">Today's Deals</h1>
+		</div>
+		<div class="panel-body">
+			<div class="row horiz-center-items">
+				<div class="col-md-3 col-sm-6">
+					{% include deal.html title="Dimmer" image="products/dimmer1.jpg" desc="BOGO Half Off" %}
+				</div>
+				<div class="col-md-3 col-sm-6">
+					{% include deal.html title="Ring Floodlight" image="products/ring-camera1.jpg" desc="Save on Fosmon Motion Cam" %}
+				</div>
+				<div class="col-md-3 col-sm-6">
+					{% include deal.html title="Oculus" image="products/oculus1.jpg" desc="Get 6 Free games" %}
+				</div>
+				<div class="col-md-3 col-sm-6">
+					{% include deal.html title="TP-Link Smart Bulb" image="products/tp-link1.jpg" desc="Save $20 on 6" %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1 class="panel-title medium">Categories</h1>
+		</div>
+		<div class="panel-body">
+			<div class="row horiz-center-items">
+				{% for cat in site.data.categories limit:3 %}
+					<div class="category-wrap col-sm-4">
+					{% assign href=cat.id | prepend:"products.html#" %}
+					{% include circleImage.html title=cat.name image=cat.image tooltip=cat.longName href=href %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</main>

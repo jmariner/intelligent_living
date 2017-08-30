@@ -1,0 +1,33 @@
+---
+layout: main
+location: products
+---
+<main class="container-fluid">
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1 class="panel-title large">Products</h1>
+		</div>
+	</div>
+
+	{% for cat in site.data.categories %}
+		{% assign products = site.data.products | where:"category",cat.id %}
+
+		<div class="panel panel-info">
+			<a id="{{ cat.id }}" class="jump-target"></a>
+			<div class="panel-heading left-heading col-lg-4 col-md-6 col-sm-8 col-xs-10">
+				<h3 class="panel-title small"><span class="hidden-xs">Category: </span>{{ cat.longName }}</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					{% for prod in products limit:4 %}
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						{% include product.html name=prod.name price=prod.price images=prod.images %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+	{% endfor %}
+</main>

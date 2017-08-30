@@ -1,0 +1,53 @@
+{% assign prod = site.data.products | where:"id",include.productId %}
+{% assign prod = prod.first %}
+<main id="productView" class="container-fluid">
+	<div class="col-md-10 col-md-offset-1 col-xs-12">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<div class="panel-title small">{{ prod.name }}</div>
+			</div>
+			<div class="panel-body">
+				<div class="col-xs-5">
+					<div class="imgWrap row">
+						<div class="imgThumbs col-xs-3">
+							{% for img in prod.images %}
+							<img src="img/products/{{ img }}">
+							{% endfor %}
+						</div>
+						<div class="imgSelected col-xs-9">
+							<img id="selectedImage" src="img/products/{{ prod.images.first }}">
+						</div>
+					</div>
+				</div>
+				<div class="product-info col-xs-7">
+					<div class="row">
+						<h2 class="text-center">Product Information</h2>
+						<ul class="desc">
+							{% for line in prod.desc %}
+							<li>{{ line }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+					<div class="row price-wrap">
+						<h1 class="text-center">
+							Price:
+							<span class="product-price">{{ prod.price }}</span>
+						</h1>
+					</div>
+					<div class="row text-center">
+						<a href="#" class="btn btn-success">
+							Add to Cart
+							<span class="glyphicon glyphicon-shopping-cart"></span>
+						</a>
+					</div>
+					<div class="row text-center">
+						<button id="close" class="btn btn-warning">
+							Close
+							<span class="glyphicon glyphicon-remove"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

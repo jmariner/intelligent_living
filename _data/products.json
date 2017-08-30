@@ -1,0 +1,182 @@
+[
+	{
+		"id": "nest",
+		"name": "Nest Learning Thermostat 3rd Generation",
+		"category": "home",
+		"price": "239.99",
+		"images": ["nest1.jpg", "nest2.jpg", "nest3.jpg"],
+		"desc": [
+			"Works with Amazon Alexa for voice control (Alexa device sold separately)",
+			"Auto-Schedule: Nest learns the temperatures you like and programs itself in about a week.",
+			"Home/Away Assist: Nest automatically turns itself down when nobody’s home to help you save energy.",
+			"Remote Control: Connect your thermostat to Wi-Fi to control the temperature from your phone, tablet or laptop.",
+			"Farsight: When the Nest Thermostat spots you across the room, it lights up beautifully to show you the time, temperature or weather.",
+			"Energy Star: First thermostat to earn Energy Star. Your thermostat controls half your energy bill - more than appliances, more than electronics. Saving energy starts with your Thermostat.",
+			"Energy History: Check your Energy History in the Nest app to see how much energy you use and why.",
+			"Nest Leaf: You’ll see the Leaf when you choose a temperature that saves energy. It guides you in the right direction."
+		]
+	},
+	{
+		"id": "tp-link",
+		"name": "TP-Link Smart LED Light Bulb, Wi-Fi, Dimmable White, 50W Equivalent",
+		"category": "home",
+		"price": "19.99",
+		"images": ["tp-link1.jpg", "tp-link2.jpg"],
+		"desc": [
+			"Works with Amazon Alexa to support dimming through voice control (Alexa device sold separately)",
+			"50 Watt Equivalent, 2700K Soft Warm White (Compatible w/ Amazon Alexa & Google Assistant)",
+			"Control your lights from anywhere with your tablet or smartphone using the free kasa app (Android 4.1 or higher / iOS 8 or higher)",
+			"Dim brightness to customize Lighting and suit your mood",
+			"Set schedules, timers, and countdowns and have your lights work around your life, No hub required; works with your Wi-Fi router"]
+	},
+	{
+		"id": "dimmer",
+		"name": "LUTRON P-PKG1W-WH Caseta Wireless 600-watt/150-watt Multi-Location In-Wall Dimmer with Pico Remote Control Kit, White",
+		"category": "home",
+		"price": "59.95",
+		"images": ["dimmer1.jpg", "dimmer2.jpg", "dimmer3.jpg"],
+		"desc": [
+			"Works with Amazon Alexa to support dimming through voice control (Lutron Smart Bridge required; Alexa Device and Smart Bridge sold separately)",
+			"Conveniently control your lights from anywhere within your home with the Pico remote control",
+			"Provides the best dimming performance for LED bulbs",
+			"Works with 150-Watts of dimmable LEDS and 600-Watts of incandescent/halogen,",
+			"For use in multi-location applications, replace existing switch with included Pico remote control and wallplate adaptor (sold separately, PICO-WBX-ADAPT)",
+			"Works seamlessly with Amazon Alexa, Apple HomeKit, Carrier Cor, Ecobee, the Google Assistant, Nest, Honeywell, Logitech, Samsung SmartThings, Sonos, Serena Shades and more (Lutron Smart Bridge Required)",
+			"Caseta in-wall dimmers install easily in as little as 15 minutes and are an ideal solution, even for older homes, as they do not require a neutral wire",
+			"Kit includes (1) In-Wall Dimmer with Wallplate and (1) Pico Remote Control"
+		]
+	},
+	{
+		"id": "echo",
+		"name": "Amazon Echo - Black",
+		"category": "home",
+		"price": "179.99",
+		"images": ["echo1.jpg", "echo2.jpg", "echo3.jpg"],
+		"desc": [
+			"Plays all your music from Amazon Music, Spotify, Pandora, iHeartRadio, TuneIn, and more using just your voice",
+			"Introducing Alexa calling and messaging, a new way to be together with family and friends. Just ask Alexa to call or message anyone with an Echo, Echo Dot, or the Alexa App.",
+			"Fills the room with immersive, 360º omni-directional audio",
+			"Hears you from across the room with far-field voice recognition, even while music is playing",
+			"Answers questions, reads the news, reports traffic and weather, reads audiobooks from Audible, gives info on local businesses, provides sports scores and schedules, controls Amazon Video on Fire TV, and more using the Alexa Voice Service",
+			"Controls lights, fans, TVs, switches, thermostats, garage doors, sprinklers, locks, and more with compatible connected devices from WeMo, Philips Hue, Sony, Samsung SmartThings, Nest, and others",
+			"Always getting smarter and adding new features, plus thousands of skills like Uber, Domino's, DISH, and more"
+		]
+	},
+
+
+
+	{
+		"id": "ring-camera",
+		"name": "Ring Floodlight Camera Motion-Activated HD Security Cam Two-Way Talk and Siren Alarm, Black",
+		"category": "security",
+		"price": "249.00",
+		"images": ["ring-camera1.jpg", "ring-camera2.jpg", "ring-camera3.jpg"],
+		"desc": [
+			"See, hear and speak to people on your property from your phone or tablet",
+			"Watch over your home in 1080Hd video with infrared night vision",
+			"Sound the 110-decibel alarm on suspicious activity",
+			"Create and customize your motion zones to focus on the most important areas of your yard",
+			"Check-in on your property at any time, and get streaming video and audio with live view"
+		]
+	},
+	{
+		"id": "motion-sensor",
+		"name": "Fosmon WaveLink 51005HOM Wireless Home Security Driveway Alarm, Motion Sensor Detect Alert, Store Door Entry Chime",
+		"category": "security",
+		"price": "22.99",
+		"images": ["motion-sensor1.jpg", "motion-sensor2.jpg", "motion-sensor3.jpg"],
+		"desc": [
+			"[DOOR ENTRY ALERT] Alerting business owner or home owner with wireless doorbell. The ability to sense motion through the front or back door. Portable design to easily install in homes, office, work, retail store, or utilize it for mailbox, garage, driveway or other.",
+			"[MOTION SENSOR DISTANCE] Fosmon Wireless Doorbell Sensor, detect movements between 16.5ft/5m to 110 degree. Transporting signal to receiver within 500ft/150m in operating range, an activation for the receiver to alert.",
+			"[RINGTONE] Provide 52 different options of ringtone; from melody sounds to simple basic buzz. Customizing doorbell ring to personal preference whenever you want. Along with 4 volume level control. Never having to miss a visitor or customers walk-in.",
+			"[VISUAL ALERTS] When the receiver transmitter signal engage, the LED light indicator flashes to perform a visual alter. Great visual indicator for you when listening to music or for the hearing impaired.",
+			"[WIRE FREE] No wires in-wall installation. Fosmon Wireless Doorbell Sensor is battery operated for fast and easy use. Each receiver can be paired with up to 10 transmitters. Each transmitter can be paired with up to 10 receivers."
+		]
+	},
+	{
+		"id": "fingerprint-handle",
+		"name": "Ultraloq UL3 BT Bluetooth Enabled Fingerprint and Touchscreen Keyless Smart Door Lock",
+		"category": "security",
+		"price": "199.00",
+		"images": ["fingerprint-handle1.jpg", "fingerprint-handle2.jpg", "fingerprint-handle3.jpg"],
+		"desc": [
+			"World's First 5-in-1 Keyless Entry Smart Lock, Fingerprint + Code + Smartphone + Knock to Open + Key",
+			"Advanced Fingerprint Identification, Anti-peep Touch Keypad Technology, View Logs via Ultraloq App",
+			"Reversible Handle, Weatherproof, Intuitive OLED Display, Long Battery Life, Low Battery Alarm",
+			"18 Months Electronic and Lifetime Mechanical Warranty, DIY Installation, Auto-relock/Passage/Lockout",
+			"Single Latch (Optional Deadbolt Cover Plate Required for Replacing Existing Deadbolt)"
+		]
+	},
+	{
+		"id": "pet-cam",
+		"name": "Furbo Dog Camera: Treat Tossing, HD Wifi Cam, and 2-Way Audio",
+		"category": "security",
+		"price": "249.00",
+		"images": ["pet-cam1.jpg", "pet-cam2.jpg", "pet-cam3.jpg"],
+		"desc": [
+			"Fun TREAT TOSSING: TOSS a treat to your dogs via the free Furbo iOS/Android app. Fill it with your dogs’ favorite treats & play a game of catch.",
+			"Full HD Camera & Night Vision: livestream video to monitor your pet with a wide-angle view, day and night.",
+			"2-Way Chat & BARKING ALERT: Furbo’s BARKING SENSOR is MADE FOR DOGS. It sends push notifications to your smartphone when it detects barking. Know what’s going on at home and talk to calm them down via the app.",
+			"Easy 3-Step Setup: 1) plug in to a power outlet using its USB cord 2) download the Furbo app 3) connect to your home wifi.",
+			"Stable internet connection & Wifi signal are recommended for best performance."
+		]
+	},
+
+
+
+	{
+		"id": "fitbit",
+		"name": "Fitbit Blaze Smart Fitness Watch, Black, Silver, Large",
+		"category": "wearable",
+		"price": "149.95",
+		"images": ["fitbit1.jpg", "fitbit2.jpg", "fitbit3.jpg"],
+		"desc": [
+			"See simplified heart rate zones for quickly checking exercise intensity during workouts with PurePulse(TM) continuous, wrist-based heart rate monitoring (no uncomfortable chest strap required)",
+			"Use multi-sport tracking to track runs, cardio, cross-training, biking and more. Effortlessly and automatically record other workouts to your dashboard with SmartTrack",
+			"Enable connected GPS to map your routes and see run stats like pace and duration on display (when your phone is nearby)",
+			"Track steps, distance, calories burned, floors climbed and active minutes. Stay connected with call, text & calendar alerts and notifications from your favorite apps like Gmail, Facebook and more (when phone is nearby).",
+			"Start a FitStar workout on your wrist and get step-by-step instructions and graphics to ensure you complete each move correctly"
+		]
+	},
+	{
+		"id": "garmin-watch",
+		"name": "Garmin vívoactive HR GPS Smart Watch, Regular fit - Black",
+		"category": "wearable",
+		"price": "199.99",
+		"images": ["garmin-watch1.jpg", "garmin-watch2.jpg", "garmin-watch3.jpg"],
+		"desc": [
+			"Regular fits wrist circumferences 5.39 to 7.68 inches (137 to 195 mm), GPS smartwatch with a sunlight-readable, high-resolution color touchscreen",
+			"24/7 HEART RATE MONITORING - Elevate wrist heart technology gives you heart rate all day and night without an additional strap,Heart rate is not available while swimming",
+			"SMART NOTIFICATIONS - Set any notification from your mobile device to display when paired with a compatible smartphone"
+		]
+	},
+	{
+		"id": "oculus",
+		"name": "Oculus Rift + Touch Virtual Reality System",
+		"category": "wearable",
+		"price": "399.00",
+		"images": ["oculus1.jpg", "oculus2.jpg", "oculus3.jpg"],
+		"desc": [
+			"Get 6 free titles, including: Robo Recall, Luckyʼs Tale, Quill, Medium, Dead and Buried, and Toybox",
+			"Riftʼs ultra low-latency tracking offers unparalleled immersion",
+			"The Oculus Touch controllers bring your hands into VR, letting you interact naturally with the virtual world",
+			"NVIDIA GTX 1050Ti/AMD Radeon RX 470 or greater Graphics Card Required and a RAM of 8 GB+ RAM",
+			"Windows 8.1 or Windows 7 SP1 64 bit or newer Operating System required",
+			"Windows PC and internet connection required - review recommended specs to confirm system compatibility"
+		]
+	},
+	{
+		"id": "body-cam",
+		"name": "iON Camera SnapCam Wearable HD Camera with Wi-Fi and Bluetooth",
+		"category": "wearable",
+		"price": "35.99",
+		"images": ["body-cam1.jpg", "body-cam2.jpg", "body-cam3.jpg"],
+		"desc": [
+			"1 hour live broadcasting",
+			"8MP image sensor",
+			"Hd 720P30 video recording",
+			"Free ion snapcam companion app (ios and android)",
+			"Requires microsd card up to 32gb (not included)"
+		]
+	}
+]

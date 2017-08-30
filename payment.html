@@ -1,0 +1,218 @@
+---
+layout: main
+location: payment
+---
+<main class="container-fluid">
+
+	<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h1 class="panel-title medium">Payment Information</h1>
+			</div>
+		</div>
+
+		<form id="paymentForm" method="get" action="paymentSaved.html">
+
+			<div class="panel panel-info">
+				<div class="panel-heading left-heading col-md-6 col-sm-8 col-xs-10">
+					<h1 class="panel-title small">Credit Card</h1>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-name">Name on Card</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+								<input class="form-control" id="input-name" name="name" type="text" placeholder="John A Smith">
+							</div>
+						</div>
+						<div class="form-group col-sm-6 col-xs-12">
+							<label class="control-label" for="input-phone">Phone Number</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+								<input class="form-control" id="input-phone" name="phone" type="text" placeholder="1234567890">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-cardNumber">Card Number</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
+								<input class="form-control" id="input-cardNumber" name="cardNumber" type="text" placeholder="4000123456789123">
+							</div>
+						</div>
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-cardCode">Security Code</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+								<input class="form-control width-auto" id="input-cardCode" name="cardCode" type="text" placeholder="123" size="5">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-cardExpMonth">Expiration</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+								<select class="form-control" id="input-cardExpMonth" name="cardExpMonth">
+									<option disabled selected>Month</option>
+									{% for month in (1..12) %}
+									<option value="{{ month }}">{{ month }}</option>
+									{% endfor %}
+								</select>
+								<span class="input-group-addon">&#47;<!--slash--></span>
+								<select class="form-control" id="input-cardExpYear" name="cardExpYear">
+									<option disabled selected>Year</option>
+									{% for year in (2016..2040) %}
+									<option value="{{ year }}">{{ year }}</option>
+									{% endfor %}
+								</select>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .panel-body -->
+			</div> <!-- .panel -->
+
+			<div class="panel panel-info">
+				<div class="panel-heading left-heading col-md-6 col-sm-8 col-xs-10">
+					<h1 class="panel-title small">Shipping Address</h1>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-shippingLine1">Address Line 1</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
+								<input class="form-control" id="input-shippingLine1" name="shippingLine1" type="text" placeholder="">
+							</div>
+						</div>
+						<div class="form-group col-sm-6 col-xs-12">
+							<label class="control-label" for="input-shippingLine2">Address Line 2</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-road"></span></span>
+								<input class="form-control" id="input-shippingLine2" name="shippingLine2" type="text" placeholder="">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-shippingCity">City</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
+								<input class="form-control" id="input-shippingCity" name="shippingCity" type="text" placeholder="">
+							</div>
+						</div>
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-shippingState">State</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-tree-deciduous"></span></span>
+								<select class="form-control" id="input-shippingState" name="shippingState">
+									{% include states.html %}
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-shippingZip">ZIP</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-screenshot"></span></span>
+								<input class="form-control" id="input-shippingZip" name="shippingZip" type="text" placeholder="">
+							</div>
+						</div>
+						<div class="form-group col-sm-6 col-xs-12 required">
+							<label class="control-label" for="input-shippingCountry">Country</label>
+							<div class="input-group">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></span>
+								<select class="form-control" id="input-shippingCountry" name="shippingCountry">
+									{% include countries.html %}
+								</select>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .panel-body -->
+			</div> <!-- .panel -->
+
+			<div class="panel panel-info">
+				<div class="panel-heading left-heading col-md-6 col-sm-8 col-xs-10">
+					<h1 class="panel-title small">Billing Address</h1>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="form-group col-xs-12">
+							<input id="toggleBilling" type="checkbox" data-toggle="toggle"
+								data-on="Same as Shipping Address" data-off="Different from Shipping Address" data-width="250">
+						</div>
+					</div>
+					<div id="hiddenBilling">
+						<div class="row">
+							<div class="form-group col-sm-6 col-xs-12 required">
+								<label class="control-label" for="input-billingLine1">Address Line 1</label>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
+									<input class="form-control" id="input-billingLine1" name="billingLine1" type="text" placeholder="">
+								</div>
+							</div>
+							<div class="form-group col-sm-6 col-xs-12">
+								<label class="control-label" for="input-billingLine2">Address Line 2</label>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-road"></span></span>
+									<input class="form-control" id="input-billingLine2" name="billingLine2" type="text" placeholder="">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-6 col-xs-12 required">
+								<label class="control-label" for="input-billingCity">City</label>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
+									<input class="form-control" id="input-billingCity" name="billingCity" type="text" placeholder="">
+								</div>
+							</div>
+							<div class="form-group col-sm-6 col-xs-12 required">
+								<label class="control-label" for="input-billingState">State</label>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-tree-deciduous"></span></span>
+									<select class="form-control" id="input-billingState" name="billingState">
+										{% include states.html %}
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-6 col-xs-12 required">
+								<label class="control-label" for="input-billingZip">ZIP</label>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-screenshot"></span></span>
+									<input class="form-control" id="input-billingZip" name="billingZip" type="text" placeholder="">
+								</div>
+							</div>
+							<div class="form-group col-sm-6 col-xs-12 required">
+								<label class="control-label" for="input-billingCountry">Country</label>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></span>
+									<select class="form-control" id="input-billingCountry" name="billingCountry">
+										{% include countries.html %}
+									</select>
+								</div>
+							</div>
+						</div>
+						<div id="billingCover"></div>
+					</div>
+				</div> <!-- .panel-body -->
+			</div> <!-- .panel -->
+
+			<div class="text-center">
+				<div id="formError" class="hidden alert alert-danger text-left">
+					<span class="text"></span>
+				</div>
+				<button type="submit" class="btn btn-success btn-lg">Confirm</button>
+			</div>
+
+		</form>
+
+	</div> <!-- middle column -->
+
+</main>
